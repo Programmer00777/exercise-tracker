@@ -8,12 +8,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^4.18.1",
-    "dotenv": "^16.0.3",
     "body-parser": "^1.20.0",
-    "mongoose": "^6.6.4"
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "mongoose": "^6.6.1",
+    "mongodb": "^4.10.0"
   },
-  "keywords": ["exercise", "tracker", "api", "microservice"],
+  "keywords": [
+    "exercise",
+    "tracker",
+    "api",
+    "microservice"
+  ],
   "author": {
     "name": "Sergey Chernikov",
     "email": "chernikov.dev404@gmail.com",
