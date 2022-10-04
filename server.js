@@ -29,8 +29,20 @@ const UserSchema = new Schema({
     username: String
 });
 
+/* Creating Models */
 const User = mongoose.model('User', UserSchema);
 const Exercise = mongoose.model('Exercise', ExerciseSchema);
+
+/* Endpoint Handlers */
+app.get('/api/users', (req, res) => {
+   User.find({}, (error, data) => {
+      if (error || !data) {
+          res.send("No users");
+      } else {
+          res.json(data);
+      }
+   });
+});
 
 /* Listener Configuration */
 const listener = app.listen(process.env.PORT || 3000, () => {

@@ -10,6 +10,31 @@
     <link rel="stylesheet" href="/public/style.css" type="text/css">
 </head>
 <body>
+    <div class="container">
+        <h1>Exercise Tracker</h1>
+        <form action="/api/users" method="post">
+            <h3>Create a new user...</h3>
+            <p><code>POST /api/users</code></p>
+            <input type="text" name="username" id="username" placeholder="username"/>
+            <input type="submit" value="Submit">
+        </form>
+        <form id="exercise-form" method="post">
+            <h3>Add exercises...</h3>
+            <p><code>POST /api/users/:_id/exercises</code></p>
+            <input type="text" id="userID" name=":_id" placeholder=":_id"/>
+            <input type="text" id="description" name="description" placeholder="description"/>
+            <input type="text" id="duration" name="duration" placeholder="duration (min)"/>
+            <input type="text" id="date" name="date" placeholder="date (yyyy-mm-dd)"/>
+            <input type="submit" value="Submit">
+        </form>
+        <p>
+            <strong>GET user's exercise log: </strong>
+            <code>GET /api/users/:_id/logs?[from][&amp;to][&amp;limit]</code>
+        </p>
+        <p><strong>[ ]</strong> = optional</p>
+        <p><strong>from, to</strong> = dates (yyyy-mm-dd); <strong>limit</strong> = number</p>
+    </div>
 
+    <script src="/public/script/script.js"></script>
 </body>
 </html>
