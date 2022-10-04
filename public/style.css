@@ -1,0 +1,45 @@
+body {
+    font-family: "Microsoft Sans Serif";
+}
+
+.container {
+    padding-top: 25px;
+    text-align: center;
+}
+
+code {
+    background-color: lightgray;
+}
+
+.text_input {
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    box-shadow: 1.5px 1.5px 3px black;
+    border: 1px solid gray;
+    font-family: Montserrat;
+}
+
+.text_input:focus {
+    background-color: #eeecee;
+    border: 1px solid black;
+}
+
+.grid_container {
+    display: grid;
+    grid-gap: 5px;
+    margin-bottom: 15px;
+}
+
+.submit_input {
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: lightgreen;
+    border: 2px solid green;
+    box-shadow: 1.5px 1.5px 3px lightgreen;
+}
+
+.submit_input:hover {
+    cursor: pointer;
+    background-color: palegreen;
+}

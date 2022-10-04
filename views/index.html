@@ -15,17 +15,23 @@
         <form action="/api/users" method="post">
             <h3>Create a new user...</h3>
             <p><code>POST /api/users</code></p>
-            <input type="text" name="username" id="username" placeholder="username"/>
-            <input type="submit" value="Submit">
+            <input class="text_input" type="text" name="username" id="username" placeholder="username"/>
+            <input type="submit" value="Submit" class="submit_input"/>
         </form>
         <form id="exerciseForm" method="post">
             <h3>Add exercises...</h3>
             <p><code>POST /api/users/:_id/exercises</code></p>
-            <input type="text" id="userID" name=":_id" placeholder=":_id"/>
-            <input type="text" id="description" name="description" placeholder="description"/>
-            <input type="text" id="duration" name="duration" placeholder="duration (min)"/>
-            <input type="text" id="date" name="date" placeholder="date (yyyy-mm-dd)"/>
-            <input type="submit" value="Submit"/>
+            <div class="grid_container">
+                <div class="grid_item">
+                    <input class="text_input" type="text" id="userID" name=":_id" placeholder=":_id"/>
+                    <input class="text_input" type="text" id="description" name="description" placeholder="description"/>
+                </div>
+                <div class="grid_item">
+                    <input class="text_input" type="text" id="duration" name="duration" placeholder="duration (min)"/>
+                    <input class="text_input" type="text" id="date" name="date" placeholder="date (yyyy-mm-dd)"/>
+                </div>
+            </div>
+            <input type="submit" value="Submit" class="submit_input"/>
         </form>
         <p>
             <strong>GET user's exercise log: </strong>
