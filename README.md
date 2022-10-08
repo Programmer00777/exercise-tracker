@@ -22,7 +22,7 @@ it's possible to limit the number of documents returned. Otherwise, return an ap
 - **body-parser** Node.js body parsing middleware.
 
 ## Usage
-1. Clone the repository with ```git clone git clone https://github.com/Programmer00777/exercise-tracker.git``` into your working directory.
+1. Clone the repository with ```git clone https://github.com/Programmer00777/exercise-tracker.git``` into your working directory.
 2. Launch the app with ```node server.js```
 3. Go to ```http://localhost:3000/```. You should see the next HTML page:
 <img width="1440" alt="Screen Shot 2022-10-07 at 9 45 07 PM" src="https://user-images.githubusercontent.com/55809302/194628034-d4e86ca7-c404-4806-8b9d-dcbbffd6cc8b.png">
